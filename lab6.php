@@ -21,25 +21,27 @@
         // Fahrenheit to Celsius = (T(°F) - 32) × 5/9
         // Fahrenheit to Kelvin = (T(°F) + 459.67)× 5/9
         // Kelvin to Fahrenheit = T(K) × 9/5 - 459.67
-        
         // Kelvin to Celsius = T(K) - 273.15
 
-        // $temp = $temp;
         if ($unit1 == "celsius" && $unit2 == "fahrenheit") {
             $result = $temp * 9/5 + 32;
+            return $result;
         } elseif ($unit1 == "celsius" && $unit2 == "kelvin") {
             $result = $temp + 273.15;
+            return $result;
         } elseif ($unit1 == "fahrenheit" && $unit2 == "celsius") {
             $result = ($temp - 32) * 5/9;
+            return $result;
         } elseif ($unit1 == "fahrenheit" && $unit2 == "kelvin") {
             $result = ($temp + 459.67) * 5/9;
+            return $result;
         } elseif ($unit1 == "kelvin" && $unit2 == "fahrenheit") {
             $result = $temp * 9/5 - 459.67;
+            return $result;
         } elseif ($unit1 == "kelvin" && $unit2 == "celsius") {
             $result = $temp - 273.15;
+            return $result;
         }
-
-        return $result;
 
         // You need to develop the logic to convert the temperature based on the selections and input made
 
